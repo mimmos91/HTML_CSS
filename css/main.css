@@ -71,7 +71,11 @@
     background-position:center;
     background-attachment:fixed;
     filter:brightness(70%);
-    padding: 1px;
+    padding-top:1px;
+    margin-bottom: 0px;
+    padding-bottom:0px;
+
+/*    padding: 1px;*/
 }
 
 .main-title {
@@ -88,9 +92,9 @@
 }
 
 .main-discription {
-    margin: 0 0 30px 70px;
+   left: 30%;
     position: relative;
-    color:white;
+    color:#ffffff;
     font-size: 20px;
 
 
@@ -109,11 +113,32 @@
     border: none;
     border-radius: 5px;
     color: black;
-    background-color:white;
+    background-color:#ffffff;
     position:absolute;
     left:0;
     right:0;
     margin-left:auto;
     margin-right:auto;
+
+
+}
+
+.explain-box {
+    width: 30%;
+    height: 200px;
+    background-color: #eee;
+    text-align:center;
+
+/*내가 한 방식*/
+    position:absolute;
+    margin-top:-35px;
+    left:35%;
+
+/*
+    margin: auto;
+    padding: 10px;
+    position: relative;
+    top: 0px;
+*/
 
 }
