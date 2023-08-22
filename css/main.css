@@ -92,7 +92,7 @@
 }
 
 .main-discription {
-   left: 30%;
+   left: 10%;
     position: relative;
     color:#ffffff;
     font-size: 20px;
@@ -128,17 +128,19 @@
     height: 200px;
     background-color: #eee;
     text-align:center;
+/*
 
-/*내가 한 방식*/
+내가 한 방식 => absolute로 하니까 하위에 있는 form이랑 겹침
     position:absolute;
     margin-top:-35px;
+    margin-bottom:10px;
     left:35%;
+    padding-bottom:1px;
+*/
 
-/*
     margin: auto;
     padding: 10px;
     position: relative;
-    top: 0px;
-*/
+    top: -50px;
 
 }
