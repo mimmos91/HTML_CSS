@@ -192,3 +192,14 @@
     width:
 
 }
+
+.login-button {
+    width: 60px;
+    height: auto;
+    background-color:orange;
+    border: 1px solid orange;
+    border-radius: 5px;
+    color: white;
+
+
+}
