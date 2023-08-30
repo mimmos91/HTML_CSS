@@ -144,3 +144,51 @@
     top: -50px;
 
 }
+
+ .Login-Background {
+    background-color:#3c3c3c;
+    margin: 0 0 0 0;
+}
+
+.login-form {
+    height: 500px;
+    width: 400px;
+    background-color:white;
+    border: 0px;
+    border-radius:3px;
+    margin-top: 10%;
+    margin-left:auto;
+    margin-right: auto;
+    text-align:left;
+    padding-left:5%;
+}
+
+.login-title {
+    padding-top:10px;
+    color:black;
+}
+
+.login-form-detail input {
+    padding-left:15px;
+    padding-top:5px;
+    padding-bottom:5px;
+    border:1px solid #d2d2d2;
+    box-shadow: none;
+    place-items color:#eee;
+    width: 80%;
+
+}
+
+.login-form-detail p{
+
+    font-size: 14px;
+    color:black;
+    margin-bottom:3px;
+}
+
+.login-form-detail input{
+
+    border-radius:3px;
+    width:
+
+}
