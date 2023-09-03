@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .profile{
 width: 100px;
 display: block;
@@ -97,12 +98,217 @@ text-align: center; font-weight: 500
 .navbar a {
     font-size: 16px;
     text-decoration: none;
+=======
+
+.container {
+
+    margin: 30px auto auto auto;
+/*    align-items: center;*/
+    display: flex;
+    width: 800px;
+    height: 200px;
+}
+
+.text_container {
+    width: 70%;
+    height:200px;
+}
+
+.profile_image {
+    width:50px;
+
+
+    display : block;
+    float:left;
+
+    margin:0 10px 0 3px;
+    font-size: 30px;
+/*    vertical-align: middle;*/
+/*    text-align: center;*/
+    position: relative;
+
+}
+
+#introduce {
+    height:150px;
+    margin:10px;
+
+    clear: both;
+}
+
+.img_container {
+    display: flex;
+    width:30%px;
+    height:200px;
+}
+
+#imgSet {
+    width:50px;
+    height: 50px;
+    border:1px solid white;
+    border-radius:100%;
+}
+
+#blog-name {
+
+/*    height: 50px;*/
+    display: block;
+    float: left;
+/*    margin:0;*/
+/*    font-size: 15px;*/
+}
+
+.profile {
+    width: 300px;
+    height: 50px;
+}
+
+.main-background {
+    width: 100%;
+    height: 300px;
+    background-size:cover;
+    background-image: url(../img/shoes.jpg),url(transparency.png);
+    background-repeat:no-repeat;
+    background-position:center;
+    background-attachment:fixed;
+    filter:brightness(70%);
+    padding-top:1px;
+    margin-bottom: 0px;
+    padding-bottom:0px;
+
+/*    padding: 1px;*/
+}
+
+.main-title {
+    margin-top: 50px;
+    margin-bottom:10px;
+
+    position: relative;
+    color: white;
+    font-size: 30px;
+    font: Ariel;
+    padding:1px;
+    text-align:center;
+
+}
+
+.main-discription {
+   left: 10%;
+    position: relative;
+    color:#ffffff;
+    font-size: 20px;
 
 
 }
 
+.main-discription p
+{
+    margin:0 0 10px 10px;
+}
+
+.main-button {
+
+    height:50px;
+    width: 100px;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    color: black;
+    background-color:#ffffff;
+    position:absolute;
+    left:0;
+    right:0;
+    margin-left:auto;
+    margin-right:auto;
+>>>>>>> c4f64b0037a20346e634fe64362d46b130c73e2c
+
+
+}
+
+<<<<<<< HEAD
 a:visited{color:black;}
 a:hover{color: blue;}
 .content {
     margin-top:30px;
+=======
+.explain-box {
+    width: 30%;
+    height: 200px;
+    background-color: #eee;
+    text-align:center;
+/*
+
+내가 한 방식 => absolute로 하니까 하위에 있는 form이랑 겹침
+    position:absolute;
+    margin-top:-35px;
+    margin-bottom:10px;
+    left:35%;
+    padding-bottom:1px;
+*/
+
+    margin: auto;
+    padding: 10px;
+    position: relative;
+    top: -50px;
+
+}
+
+ .Login-Background {
+    background-color:#3c3c3c;
+    margin: 0 0 0 0;
+}
+
+.login-form {
+    height: 500px;
+    width: 400px;
+    background-color:white;
+    border: 0px;
+    border-radius:3px;
+    margin-top: 10%;
+    margin-left:auto;
+    margin-right: auto;
+    text-align:left;
+    padding-left:5%;
+}
+
+.login-title {
+    padding-top:10px;
+    color:black;
+}
+
+.login-form-detail input {
+    padding-left:15px;
+    padding-top:5px;
+    padding-bottom:5px;
+    border:1px solid #d2d2d2;
+    box-shadow: none;
+    place-items color:#eee;
+    width: 80%;
+
+}
+
+.login-form-detail p{
+
+    font-size: 14px;
+    color:black;
+    margin-bottom:3px;
+}
+
+.login-form-detail input{
+
+    border-radius:3px;
+    width:
+
+}
+
+.login-button {
+    width: 60px;
+    height: auto;
+    background-color:orange;
+    border: 1px solid orange;
+    border-radius: 5px;
+    color: white;
+
+
+>>>>>>> c4f64b0037a20346e634fe64362d46b130c73e2c
 }
