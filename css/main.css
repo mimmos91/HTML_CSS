@@ -13,7 +13,9 @@ text-align: center;
 
 p{
 
-text-align: center; font-weight: 500
+text-align: left;
+font-weight: 500;
+padding-bottom: 3px;
 
 }
 
@@ -219,9 +221,6 @@ text-align: center; font-weight: 500
     right:0;
     margin-left:auto;
     margin-right:auto;
->>>>>>> c4f64b0037a20346e634fe64362d46b130c73e2c
-
-
 }
 
 a:visited{color:black;}
@@ -258,7 +257,7 @@ a:hover{color: blue;}
 }
 
 .login-form {
-    height: 500px;
+    height: 470px;
     width: 400px;
     background-color:white;
     border: 0px;
@@ -276,6 +275,8 @@ a:hover{color: blue;}
 }
 
 .login-form-detail input {
+    border-radius:3px;
+    width:
     padding-left:15px;
     padding-top:5px;
     padding-bottom:5px;
@@ -293,12 +294,7 @@ a:hover{color: blue;}
     margin-bottom:3px;
 }
 
-.login-form-detail input{
 
-    border-radius:3px;
-    width:
-
-}
 
 .login-button {
     width: 60px;
@@ -307,6 +303,12 @@ a:hover{color: blue;}
     border: 1px solid orange;
     border-radius: 5px;
     color: white;
+    align-content:flex-end;
+
+}
+
+
+.name {
 
 
 }
