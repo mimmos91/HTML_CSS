@@ -379,8 +379,8 @@ a:hover {
 
 
 
-tr{
-    border:5px solid #B2CCD6;
+tr,td{
+    border-bottom: 1px solid #c2d3de;
 
 }
 
@@ -389,7 +389,7 @@ table {
     height: auto;
     border-collapse: collapse;
     background-color: white;
-    border: 1px solid white;
+/*    border: 3px solid #8E9FB3;*/
     border-radius:5px;
     color: #8E9FB3;
 }
@@ -441,6 +441,31 @@ th span {
 
 
 
-td {
-    text-align:center;
+
+.cart-talbe td
+{
+    padding: 15px;
+    border-bottom: 1px solid #c2d3de;
+
+}
+
+.cart-background {
+    width:100%;
+    background-color:#c2d3de;
+    padding:30px;
+}
+
+.cart-table {
+    width:100%;
+    max-width:800px;
+    margin:auto;
+    background: white;
+    border-radius: 10xp;
+
+}
+
+
+.cart-table th:nth-child(2){
+    width: 400px
+//n번째 사용하는 스타일링은
 }
