@@ -377,27 +377,10 @@ a:hover {
 }
 }
 
-.yellow-button {
-    background-color:orange;
 
-    padding:10px;
-    display:block;
-    margin-left:auto;
-/*
-    width: 60px;
-    height: auto;
-*/
-/*
-    background-color: orange;
-    border: 1px solid orange;
-    border-radius: 5px;
-    color: white;
-*/
-
-}
 
 tr{
-    border:2px solid #B2CCD6;
+    border:5px solid #B2CCD6;
 
 }
 
@@ -444,4 +427,20 @@ table {
 
 th span {
    text-align:left;
+}
+
+.yellow-button {
+    background-color: orange;
+    border: 1px solid orange;
+    border-radius: 5px;
+    color:white;
+    padding:10px;
+    display: flex;
+    margin-left:auto;
+}
+
+
+
+td {
+    text-align:center;
 }
