@@ -1,3 +1,10 @@
+@font-face{
+
+font-family: '이쁜폰트';
+src:url(../font/NanumSquareR.ttf);
+
+}
+
 div,input,textarea {
 
     box-sizing: border-box;
@@ -5,6 +12,14 @@ div,input,textarea {
 
 body {
     margin: 0px;
+    font-family: 'HYPost','gulim','dotum','arial';
+}
+
+p,h4,h3,h2,h1,span{
+
+    transform: roatate(0.03deg);
+/*    부드럽게 처리가능함*/
+
 }
 
 /*
@@ -415,7 +430,30 @@ table {
     width: auto;
     float: right;
 
+    cursor: pointer;
+
 }
+
+.blue-button:hover{
+/*    마우스 버튼 올리면?*/
+    background-color:chocolate;
+
+}
+.blue-button:focus{
+/*    마우스 클릭 후 커서가 남아있을 때?*/
+    background-color: grey;
+
+}
+.blue-button:active{
+/*    마우스 클릭?*/
+    background-color:brown;
+    border: 2px solid black;
+
+}
+
+
+
+
 
 
 
@@ -468,4 +506,41 @@ th span {
 .cart-table th:nth-child(2){
     width: 400px
 //n번째 사용하는 스타일링은
+}
+
+.input-test {
+    font-size:20px;
+}
+
+
+.input-test:focus {
+    border: 5px solid red;
+}
+
+.custom-link {
+    text-decoration: none;
+
+}
+
+.custom-link:link{
+    color:skyblue;
+}
+
+.custom-link:visited{
+    color:black;
+}
+
+.main-btn {
+    padding:16p;
+    font-size: 20px;
+
+/*    공동적인 것 여기*/
+}
+.bg-red{
+
+    background-color:red;
+}
+
+.bg-blue {
+    background-color:blue;
 }
