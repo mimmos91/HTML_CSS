@@ -1,4 +1,6 @@
-div,input,textarea {
+div,
+input,
+textarea {
 
     box-sizing: border-box;
 }
@@ -42,8 +44,12 @@ p {
 
 }
 
-th p{
-    color:black;font-weight:bolder;margin:0;vertical-align:bottom;text-align:left;
+th p {
+    color: black;
+    font-weight: bolder;
+    margin: 0;
+    vertical-align: bottom;
+    text-align: left;
 }
 
 
@@ -62,8 +68,7 @@ th p{
     margin: 10px;
     padding: 40px;
     display: block;
-    div는 기본적으로 display: block 가지고 있음.가로행 전부 차지할께 뜻
-    margin-left: auto;
+    div는 기본적으로 display: block 가지고 있음.가로행 전부 차지할께 뜻 margin-left: auto;
     margin-right: auto;
     border: 1px solid white;
     border-radius: 5px;
@@ -379,7 +384,8 @@ a:hover {
 
 
 
-tr,td{
+tr,
+td {
     border-bottom: 1px solid #c2d3de;
 
 }
@@ -389,8 +395,8 @@ table {
     height: auto;
     border-collapse: collapse;
     background-color: white;
-/*    border: 3px solid #8E9FB3;*/
-    border-radius:5px;
+    /*    border: 3px solid #8E9FB3;*/
+    border-radius: 5px;
     color: #8E9FB3;
 }
 
@@ -403,14 +409,14 @@ table {
 }
 
 .Cart {
-    background-color:#B2CCD6;
+    background-color: #B2CCD6;
     padding: 30px;
 }
 
 .blue-button {
     background-color: #133761;
     color: white;
-    border-radius:5px;
+    border-radius: 5px;
     height: 50px;
     width: auto;
     float: right;
@@ -420,52 +426,76 @@ table {
 
 
 .cart-bottom {
-    margin-top:20px;
+    margin-top: 20px;
     margin-bottom: 10px
 }
 
 
 th span {
-   text-align:left;
+    text-align: left;
 }
 
 .yellow-button {
     background-color: orange;
     border: 1px solid orange;
     border-radius: 5px;
-    color:white;
-    padding:10px;
+    color: white;
+    padding: 10px;
     display: flex;
-    margin-left:auto;
+    margin-left: auto;
 }
 
 
 
 
-.cart-talbe td
-{
+.cart-talbe td {
     padding: 15px;
     border-bottom: 1px solid #c2d3de;
 
 }
 
 .cart-background {
-    width:100%;
-    background-color:#c2d3de;
-    padding:30px;
+    width: 100%;
+    background-color: #c2d3de;
+    padding: 30px;
 }
 
 .cart-table {
-    width:100%;
-    max-width:800px;
-    margin:auto;
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
     background: white;
     border-radius: 10xp;
 
 }
 
 
-.cart-table th:nth-child(2){
-    width: 400px
-//n번째 사용하는 스타일링은
+.cart-table th:nth-child(2) {
+    width: 400px //n번째 사용하는 스타일링은
 }
+
+.banner {
+    display: flex;
+    height: 30px;
+    align-items: center;
+    padding: 1px;
+    /*
+    text-align:center;
+    vertical-align: middle;
+*/
+}
+
+.banner-items {
+    height: 100%;
+    width: 200px;
+    /*    background-color: chocolate;*/
+    padding-right: 10px;
+    text-align: center;
+
+}
+
+.banner-items:hover {
+    background-color: brown;
+}
+
+
