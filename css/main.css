@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 @font-face{
 
 font-family: '이쁜폰트';
@@ -7,11 +7,6 @@ src:url(../font/NanumSquareR.ttf);
 }
 
 div,input,textarea {
-=======
-div,
-input,
-textarea {
->>>>>>> origin/main
 
     box-sizing: border-box;
 }
@@ -553,7 +548,7 @@ th span {
 .bg-blue {
     background-color:blue;
 }
-=======
+
 .banner {
     display: flex;
     height: 30px;
@@ -579,4 +574,8 @@ th span {
 }
 
 
->>>>>>> origin/main
+.menu {
+    @media screen and (max-width :1200px){
+
+}
+
