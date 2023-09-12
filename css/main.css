@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 @font-face{
 
 font-family: '이쁜폰트';
@@ -7,11 +7,6 @@ src:url(../font/NanumSquareR.ttf);
 }
 
 div,input,textarea {
-=======
-div,
-input,
-textarea {
->>>>>>> origin/main
 
     box-sizing: border-box;
 }
@@ -578,3 +573,12 @@ th span {
     background-color: brown;
 }
 
+<<<<<<< HEAD
+=======
+
+.menu {
+    @media screen and (max-width :1200px){
+
+}
+
+>>>>>>> origin/main
