@@ -511,7 +511,6 @@ th span {
     width: 400px //n번째 사용하는 스타일링은
 }
 
-<<<<<<< HEAD
 .input-test {
     font-size:20px;
 }
@@ -573,12 +572,7 @@ th span {
     background-color: brown;
 }
 
-<<<<<<< HEAD
-=======
-
 .menu {
     @media screen and (max-width :1200px){
 
 }
-
->>>>>>> origin/main
