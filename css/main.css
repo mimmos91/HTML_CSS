@@ -17,6 +17,7 @@ body {
 }
 
 p,h4,h3,h2,h1,span{
+    margin:0;
 
     transform: roatate(0.03deg);
 /*    부드럽게 처리가능함*/
@@ -50,6 +51,7 @@ textarea {
 
 }
 
+/*
 p {
 
     text-align: left;
@@ -57,7 +59,9 @@ p {
     padding-bottom: 3px;
 
 }
+*/
 
+/*
 th p {
     color: black;
     font-weight: bolder;
@@ -65,6 +69,7 @@ th p {
     vertical-align: bottom;
     text-align: left;
 }
+*/
 
 
 /*
@@ -574,8 +579,68 @@ th span {
 }
 
 
+
+
 .menu {
-    @media screen and (max-width :1200px){
+    display:flex;
+
+    margin: auto;
+    justify-content: space-around;
 
 }
 
+.detail {
+    height:150px;
+    width:300px;
+    border: 1px solid white;
+    text-align:center;
+    vertical-align: middle;
+    align-content:center;
+    background-color: #eee;
+    margin:auto;
+    padding:10px;
+}
+
+@media screen and (max-width: 768px){
+    .menu{
+        flex-flow:wrap;
+    }
+
+
+}
+
+
+@media screen and (max-width:576)
+{
+    .menu{
+        flex-direction: row;
+    }
+
+}
+
+/* 코딩애플 답
+.explain-container>div {
+  float : left;
+  width : 25%;
+}
+
+@media screen and (max-width : 992px) {
+  .explain-container>div {
+    float : left;
+    width : 50%;
+  }
+}
+
+@media screen and (max-width : 768px) {
+  .explain-container>div {
+    float : none;
+    width : 100%;
+  }
+}
+
+
+*/
+
+<!--[if lt IE 9]>
+  <link rel="stylesheet" type="text/css" href="css/ie8.css" />
+<![endif]-->
