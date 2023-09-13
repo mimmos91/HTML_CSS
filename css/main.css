@@ -516,7 +516,6 @@ th span {
     width: 400px //n번째 사용하는 스타일링은
 }
 
-<<<<<<< HEAD
 .input-test {
     font-size:20px;
 }
@@ -578,9 +577,6 @@ th span {
     background-color: brown;
 }
 
-
-
-
 .menu {
     display:flex;
 
@@ -588,7 +584,6 @@ th span {
     justify-content: space-around;
 
 }
-
 .detail {
     height:150px;
     width:300px;
@@ -641,6 +636,8 @@ th span {
 
 */
 
+/*
 <!--[if lt IE 9]>
   <link rel="stylesheet" type="text/css" href="css/ie8.css" />
 <![endif]-->
+*/
