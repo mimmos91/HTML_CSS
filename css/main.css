@@ -17,7 +17,7 @@ body {
 }
 
 p,h4,h3,h2,h1,span{
-    margin:0;
+/*    margin:0;*/
 
     transform: roatate(0.03deg);
 /*    부드럽게 처리가능함*/
@@ -315,14 +315,22 @@ a:hover {
 }
 
 .login-form {
-    height: 470px;
-    width: 400px;
+/*
+    height:auto;
+    width: auto;
+*/
+    height: 550px;
+    width: 600px;
     background-color: white;
     border: 0px;
     border-radius: 3px;
-    margin-top: 10%;
+    margin: 5% auto 5% auto;
+/*
+    margin-top: 5%;
+    margin-bottom: 5%;
     margin-left: auto;
     margin-right: auto;
+*/
     text-align: left;
     padding-left: 5%;
 }
@@ -584,16 +592,27 @@ th span {
     justify-content: space-around;
 
 }
+
+.menu i{
+    background-color: burlywood;
+    width:100px;
+    height:100px;
+    border-radius:50px;
+    padding-top:25px;
+    box-sizing:border-box;
+    margin-bottom:15px;
+}
 .detail {
-    height:150px;
+    height:auto;
     width:300px;
     border: 1px solid white;
+    box-sizing:content-box;
     text-align:center;
     vertical-align: middle;
     align-content:center;
     background-color: #eee;
     margin:auto;
-    padding:10px;
+    padding:20px;
 }
 
 @media screen and (max-width: 768px){
@@ -641,3 +660,10 @@ th span {
   <link rel="stylesheet" type="text/css" href="css/ie8.css" />
 <![endif]-->
 */
+
+.login {
+    background-color:gray;
+    align-content: center;
+    padding:1px;
+
+}
