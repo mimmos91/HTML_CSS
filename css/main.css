@@ -87,7 +87,8 @@ th p {
     margin: 10px;
     padding: 40px;
     display: block;
-    div는 기본적으로 display: block 가지고 있음.가로행 전부 차지할께 뜻 margin-left: auto;
+/*    div는 기본적으로 display: block 가지고 있음.가로행 전부 차지할께 뜻 */
+    margin-left: auto;
     margin-right: auto;
     border: 1px solid white;
     border-radius: 5px;
@@ -610,11 +611,12 @@ th span {
     text-align:center;
     vertical-align: middle;
     align-content:center;
-    background-color: #eee;
+/*    background-color: #eee;*/
     margin:auto;
     padding:20px;
 }
 
+ 내가 한건데
 @media screen and (max-width: 768px){
     .menu{
         flex-flow:wrap;
@@ -631,6 +633,7 @@ th span {
     }
 
 }
+
 
 /* 코딩애플 답
 .explain-container>div {
@@ -666,4 +669,110 @@ th span {
     align-content: center;
     padding:1px;
 
+}
+
+.shop-bg {
+    padding:10px;
+/*
+    margin:0;
+    height: 150px;
+    width:auto;
+
+    vertical-align: middle;
+    place-content: center;
+*/
+    background-color:#eee;
+
+}
+
+.shop-container {
+
+/*
+    height:100%;
+    width:auto;
+    display:flex;
+    flex-direction:row;
+
+    vertical-align: middle;
+    place-content: center;
+    margin:0;
+*/
+    display:flex;
+    width:90%;
+    margin:auto;
+
+
+
+}
+
+.shop-items {
+/*
+    margin:0;
+    padding:0;
+    margin:10px;
+    height:120px;
+    width:120px;
+    background-color:white;
+*/
+
+    width:30%;
+    padding:10px;
+}
+
+
+.shop-items img{
+/*    position:absolute;*/
+/*
+    top:0;
+    left:0;
+    height:120px;
+    width:120px;
+*/
+
+    width:100%;
+}
+
+.shop-item {
+    height: 80%;
+    widht: 100px;
+}
+
+.overlay {
+    position:absolute;
+    width:100%;
+    height:100%;
+    background:rgba(0,0,0,0.5);
+    opacity:0;
+    transition: all 1s;
+    transition-timing-function:linear;
+/*
+    background:black;
+    opacity:0.5;
+*/
+}
+
+.overlay:hover{
+    opacity:1;
+/*    height:50%;*/
+}
+
+.overlay-wrap {
+    position:absolute;
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+
+.overlay-black {
+    width:100%;
+    height:100%;
+    margin-top:100%;
+    background:rgba(0,0,0,0.3);
+    padding:20px;
+    transition: all 1s;
+    transition-timing-function:linear;
+}
+
+.overlay-wrap:hover .overlay-black{
+    margin-top:50%;
 }
