@@ -1,0 +1,82 @@
+.intro {
+   background: linear-gradient(to bottom,#499add, #4e61c0)
+}
+
+div{
+margin:0;
+}
+.intro-detail {
+    height:300px;
+    display:flex;
+    padding:50px 20px 0 20px;
+    color:white;
+    justify-content: space-around;
+}
+
+.btn-bl{
+    color:white;
+    height: 30px;
+    width: auto;
+    border: 1px solid black;
+    border-radius:3px;
+    background-color:black;
+    text-align: center;
+    margin-top:10px;
+}
+
+body {
+    margin: 0px;
+    font-family: 'gulim','dotum','arial';
+}
+
+p {
+    margin: 0.3rem;
+}
+
+.phone {
+/*
+    padding-right: 20px;
+    width:auto;
+    height:100%;
+    margin: auto;
+*/
+}
+
+.img {
+    overflow: hidden;
+    height:100%;
+    width:auto;
+    margin-bottom:0;
+}
+
+@media screen and (max-width:576px)
+{
+    .intro-detail{
+        flex-flow:wrap;
+    }
+}
+
+.intro-detail-word {
+/*    float:left;*/
+}
+
+.profile-bg {
+    background-color:white;
+}
+
+.profile {
+    color:black;
+    text-align: center;
+}
+
+.offers-bg {
+    background: #4e61c0;
+    height:200px;
+    color:white;
+}
+
+.offers {
+
+    text-align: center;
+
+}
