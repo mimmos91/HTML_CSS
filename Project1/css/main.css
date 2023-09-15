@@ -113,15 +113,15 @@ h4 {
     padding: 30px;
 }
 
-/*.we-do-img {*/
+/*.we-do-img {
     height: auto;
     width: 50%;
     color: white;
     margin: 0;
-    /*    display:flex;*/
+        display:flex;
 
 
-}
+}*/
 
 /*.img-wrap {*/
     /*  height:300px;*/
@@ -142,10 +142,14 @@ h4 {
 background-image: url(../img/portfolio-1.jpg);}
 */
 
+.we-do-img {
+    width:50%;
+    height:300px;
+}
 
 
 
-@media screen and (max-width:576px) {
+@media screen and (max-width:520px) {
     .intro-detail {
         box-sizing: border-box;
         height: auto;
@@ -170,9 +174,4 @@ background-image: url(../img/portfolio-1.jpg);}
     }
 
 
-}
-
-.we-do-img {
-    width:50%;
-    height:300px;
 }
