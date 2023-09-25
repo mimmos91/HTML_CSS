@@ -126,6 +126,7 @@ color:white;
     height: auto;
     padding: 50px;
 }
+<<<<<<< HEAD
 .we-do-img {
     width:50%;
     float:left;
@@ -137,13 +138,53 @@ color:white;
 
 .we-do-img img {
     display:flex;
-    position:relative;
+/*    position:relative;*/
     width:100%;
     height: inherit;
     margin: 0;
     z-index:0;
 }
 @media screen and (max-width:576px) {
+=======
+
+/*.we-do-img {
+    height: auto;
+    width: 50%;
+    color: white;
+    margin: 0;
+        display:flex;
+
+
+}*/
+
+/*.img-wrap {*/
+    /*  height:300px;*/
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-content: center;
+    flex-basis: auto;
+    /*fix-direction: column;*/
+    /*justify-content:space-evenly;*/
+    /*  float:left;*/
+    /*    object-fit: fill;*/
+    /*
+  background-size:cover;
+  background-repeat: no-repeat;
+  background-position:left;
+  background-attachment: fixed;
+background-image: url(../img/portfolio-1.jpg);}
+*/
+
+.we-do-img {
+    width:50%;
+    height:300px;
+}
+
+
+
+@media screen and (max-width:520px) {
+>>>>>>> origin/main
     .intro-detail {
         box-sizing: border-box;
         height: auto;
@@ -169,6 +210,7 @@ color:white;
 
 
 }
+<<<<<<< HEAD
 
 .we-do-img-text {
     color:white;
@@ -199,3 +241,5 @@ color:white;
 .white-box:hover{
     border:30px solid white;
 }
+=======
+>>>>>>> origin/main
