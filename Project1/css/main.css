@@ -117,7 +117,7 @@ h4 {
     display:inline-block;
     /*    vertical-align: center;*/
     height: auto;
-    padding: 50px;
+    padding: 10px;
 }
 .we-do-img {
     width:50%;
@@ -140,7 +140,7 @@ h4 {
     box-sizing:content-box;
     text-align: left;
     position:absolute;
-    top:10%;
+    top:15%;
     left:10%;
 }
 
@@ -155,14 +155,20 @@ h4 {
 
 .white-box {
     position:absolute;
+    box-sizing:border-box;
     width:100%;
     height:100%;
-    z-index: 2;
-    border: 50px solid white;
+/*    backgrond-color:white;*/
+    overflow: hidden;
+    z-index:2;
+/*    border: 10px solid white;*/
+    margin:inherit;
+    padding:0;
 }
 
 .white-box:hover{
     border:30px solid white;
+    transition: border linear 0.5s;
 }
 
 @media screen and (max-width:520px) {
