@@ -30,7 +30,7 @@ div {
 body {
     margin: 0px;
     padding:0px;
-    font-family: 'gulim', 'dotum', 'arial';
+    font-family: '휴먼편지체','gulim', 'dotum', 'arial';
 }
 
 
@@ -117,7 +117,7 @@ h4 {
     display:inline-block;
     /*    vertical-align: center;*/
     height: auto;
-    padding: 10px;
+    padding: 25px;
 }
 .we-do-img {
     width:50%;
@@ -196,4 +196,30 @@ h4 {
     }
 
 
+}
+
+.connect {
+    width:auto;
+    height: 100px;
+    background-color:white;
+    text-align: center;
+    justify-content: center;
+    align-content: center;
+    vertical-align: middle;
+    color:black;
+    display: flex;
+
+
+}
+
+.connect-img{
+    background-color: #4e61c0;
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    /*    align-content: center;*/
+    color: white;
+    padding: 15px;
+    box-sizing: border-box;
+    margin:15px;
 }
