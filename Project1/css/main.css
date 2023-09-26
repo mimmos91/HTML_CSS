@@ -191,9 +191,13 @@ h4 {
     .icons {
         flex-direction: column;
 
-
+    }
+    .we-do-img {
+    float:none;
+    width:100%;
 
     }
+
 
 
 }
