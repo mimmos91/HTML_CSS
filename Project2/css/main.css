@@ -16,6 +16,15 @@ h4,p{
 
 }
 
+.coBlue{
+    color:#6fbaf8;
+}
+
+.backBlue{
+
+    background:#6fbaf8;
+}
+
 .container {
     padding: 10px;
 }
@@ -71,3 +80,45 @@ h4,p{
 
 
 
+
+
+
+.border-bottom {
+    border-color: #6fbaf8;
+}
+
+
+
+.border-info {
+    border-color:#6fbaf8 !important;
+}
+
+/*
+.sub-container{
+    margin:3px;
+    padding:15px;
+}
+*/
+
+
+*/
+
+
+
+.white-box {
+    background-color:white;
+    border:white solid 1px;
+    border-radius:3px;
+
+}
+
+
+
+.badge {
+
+    font-size:15px;
+    border: grey 1px solid !important;
+    margin:5px;
+    color: black;
+    background-color:white !important;
+}
