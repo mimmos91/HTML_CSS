@@ -1,1 +1,122 @@
-/*# sourceMappingURL=test.css.map */
+.list ul {
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  padding: auto;
+  margin: auto;
+}
+.list li {
+  text-align: center;
+  padding: 10px;
+  position: relative;
+  display: block;
+  text-decoration: none;
+  border: 1px solid whitesmoke;
+  border-radius: 1px;
+}
+.list li:active {
+  color: white;
+  background-color: blue;
+}
+
+.greenBox {
+  width: 500px;
+  height: 100px;
+  border: 1px solid #AAEBAA;
+  border-radius: 3px;
+  background-color: #AAEBAA;
+  margin: auto;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.blueBox {
+  width: 500px;
+  height: 100px;
+  border: 1px solid #28AEFF;
+  border-radius: 3px;
+  background-color: #28AEFF;
+  margin: auto;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.yellowBox {
+  width: 500px;
+  height: 100px;
+  border: 1px solid #FAFABE;
+  border-radius: 3px;
+  background-color: #FAFABE;
+  margin: auto;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.myRow {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle;
+  display: flex;
+}
+.myRow .myCol-1 {
+  width: 8.3333333333%;
+  border: 1px solid black;
+  background-color: #AAEBAA;
+}
+.myRow .myCol-2 {
+  width: 16.6666666667%;
+  border: 1px solid black;
+  background-color: #AAEBAA;
+}
+.myRow .myCol-3 {
+  width: 25%;
+  border: 1px solid black;
+  background-color: #AAEBAA;
+}
+.myRow .myCol-4 {
+  width: 33.3333333333%;
+  border: 1px solid black;
+  background-color: #AAEBAA;
+}
+.myRow .myCol-5 {
+  width: 41.6666666667%;
+  border: 1px solid black;
+  background-color: #AAEBAA;
+}
+.myRow .myCol-6 {
+  width: 50%;
+  border: 1px solid black;
+  background-color: #AAEBAA;
+}
+.myRow .myCol-7 {
+  width: 58.3333333333%;
+  border: 1px solid black;
+  background-color: #AAEBAA;
+}
+.myRow .myCol-8 {
+  width: 66.6666666667%;
+  border: 1px solid black;
+  background-color: #AAEBAA;
+}
+.myRow .myCol-9 {
+  width: 75%;
+  border: 1px solid black;
+  background-color: #AAEBAA;
+}
+.myRow .myCol-10 {
+  width: 83.3333333333%;
+  border: 1px solid black;
+  background-color: #AAEBAA;
+}
+.myRow .myCol-11 {
+  width: 91.6666666667%;
+  border: 1px solid black;
+  background-color: #AAEBAA;
+}
+.myRow .myCol-12 {
+  width: 100%;
+  border: 1px solid black;
+  background-color: #AAEBAA;
+}/*# sourceMappingURL=test.css.map */
