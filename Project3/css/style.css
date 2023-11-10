@@ -1,0 +1,87 @@
+
+.background {
+    float:left;
+
+    font-size: 25px;
+/*    display:flex;*/
+
+}
+
+.navi {
+/*    float:left*/
+    display:flex;
+    position:fixed;
+    text-align: center;
+    padding-left:35px;
+    padding-top:50px;
+    background-color:rebeccapurple;
+    width:100px;
+    height:100vw;
+    color: white;
+    z-index: 1;
+/*    order: 0;*/
+}
+
+.move{
+    transform:translateX(-150px);
+}
+
+
+
+
+.navi:hover{
+    width:200px;
+
+}
+
+.navi:hover i{
+    transform:translateX(10px);
+}
+.navi:hover .move p{
+    animation-name:ToRight;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+
+}
+
+
+/*
+@keyframes ToRight{
+    0%{transform:translateX(-150px)}
+    25%{transform:translateX(90px)}
+    75%{transform:translateX(90px)skew(-15deg)}
+    100%{transform: translateX(70px);}
+}
+*/
+@keyframes ToRight{
+    0%{transform:translateX(0px)}
+/*    25%{transform:translateX(270px)}*/
+    75%{transform:translateX(190px)skew(-30deg)}
+    100%{transform: translateX(175px);}
+}
+
+.mainPage {
+    position: relative;
+
+    display: flex;
+    z-index:0;
+}
+.menu {
+    background-color:white;
+    padding-left:120px;
+    padding-top:30px;
+    width:100vw;
+    height:100px;
+
+}
+
+
+
+.form-control {
+    font-size:1.5rem;
+    font-weight:200;
+    width:300px;
+    height:50px;
+    border:1px solid ;
+    border radius:
+}
