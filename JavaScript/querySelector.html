@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link href="../css/jsStyle.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1 id="hello">안녕하세요</h1>
+    <h1 id="hi">JS 초보예요</h1>
+
+    <script>
+        document.querySelector('#hello').style.color = 'blue';
+        document.querySelector('#hello').innerHTML = '안뇽~';
+        document.querySelector('#hi').innerHTML = 'JS 고수에요';
+        document.querySelector('#hi').style.color = 'green';
+
+    </script>
+
+    <div class="alert-box" id="alert-box">alert box!!
+        <button onclick="closeAlert()">X</button>
+
+    </div>
+    <button class="redBox" onclick="openAlert()">띄우기</button>
+    <script>
+        function closeAlert() {
+            document.querySelector('#alert-box').style.display = 'none';
+        }
+
+        function openAlert() {
+            document.querySelector('#alert-box').style.display = 'block';
+        }
+
+    </script>
+    <div class="alert-box" id="input"> </div>
+    <button onclick="alertButton('아이디')"> ID</button>
+    <button onclick="alertButton('비밀번호')"> PWD</button>
+    <script>
+        function alertButton(a) {
+            document.querySelector('#input').innerHTML = a + '를 넣어주세요';
+            document.querySelector('#input').style.display = 'block';
+        }
+
+    </script>
+
+    <div class="alert-box2" id="alert">
+        <p id="title">알림창임</p>
+        <button id="close"> 닫기 </button>
+    </div>
+    <script>
+        document.querySelector('#close').addEventListener('click', function() {
+            document.querySelector('#alert').style.display = 'none'
+        });
+
+    </script>
+
+</body>
+
+</html>

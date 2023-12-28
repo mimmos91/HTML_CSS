@@ -1,0 +1,32 @@
+
+.alert-box {
+  background-color: skyblue;
+  height:10px;
+  width:200px;
+  padding: 20px;
+  color: white;
+  border-radius: 5px;
+  display: none;
+
+}
+
+.redBox {
+    background-color:red;
+    height:50px;
+    width:100px;
+    margin:30px;
+/*    padding: 20px;*/
+    color: white;
+    font-size:20px;
+}
+
+.alert-box2 {
+ background-color: skyblue;
+  height:150px;
+  width:200px;
+  padding: 20px;
+  color: white;
+  border-radius: 5px;
+
+
+}
