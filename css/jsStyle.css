@@ -43,6 +43,8 @@
 
 .show{
     visibility: visible;
+    height:400px;
+    transition: all 1s;
 }
 
 .white-bg {
@@ -50,3 +52,31 @@
   border-radius: 5px;
   padding: 30px;
 }
+
+.navb {
+    display: flex;
+    height:50px;
+    max-width: 200px;
+    font-size: 20px;
+    margin-top:20px;
+    padding: 10px;
+    border:grey solid 1px;
+    border-radius: 5px;
+    justify-content: center;
+
+}
+
+.hidden {
+    visibility: hidden;
+    height:0px;
+    overflow: hidden;
+    transition: all 1s;
+}
+
+.showSub {
+    visibility: visible;
+    height:400px;
+    overflow: hidden;
+    transition: all 1s;
+}
+
