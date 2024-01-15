@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+
+<body>
+    <p>태조 이성계가 태어난 년도는?</p>
+    <input type="text" id="answer">
+    <button id="send-answer">제출</button>
+
+
+    <script>
+        /*-------------문제 1--------------    */
+        let age = 30;
+        const place = 'aa';
+
+        /*-------------문제 2--------------    */
+        var name = 'park';
+        var id = 0;
+
+        function showName() {
+            var name = 'kim';
+            var id = 1;
+            console.log(name);
+        }
+
+        showName();
+        console.log(id);
+        /*-------------문제 3--------------    */
+        var 예금액 = 60000;
+        var 미래예금액 = 0;
+
+        if (예금액 < 50000) {
+            미래예금액 = 예금액 * 1.15 * 1.15;
+        } else {
+//            미래예금액 = 예금액 * 1.2 * 1.2;
+            미래예금액 = 예금액 * (1.2**2);
+        }
+
+
+        console.log(미래예금액)
+        /*-------------문제 4--------------    */
+        var first = 360;
+        first = first * (19 / 9);
+        console.log(first);
+        /*-------------문제 5--------------    */
+
+
+        var count = 0;
+        $('#send-answer').on('click', function() {
+            var answer2 = $('#answer').val();
+            console.log(answer2);
+            if (answer2 == 1335) {
+                alert('성공');
+            } else {
+
+                if (count < 3) {
+                    count++;
+                    console.log(count);
+                } else {
+                    alert('멍청이');
+                }
+            }
+        })
+
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body></html>
