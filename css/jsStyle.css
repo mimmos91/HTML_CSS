@@ -79,6 +79,18 @@
     overflow: hidden;
     transition: all 1s;
 }
-
+.slide-container {
+  width: 300vw;
+/*    margin-left:-200vw;*/
+/*    transform: translatex(-100vw);*/
+  transition: all 1s;
+}
+.slide-box {
+  width: 100vw;
+  float: left;
+}
+.slide-box img {
+  width: 100%;
+}
 
 
