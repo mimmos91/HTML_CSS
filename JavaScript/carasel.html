@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
@@ -8,42 +9,86 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
     <link href="../css/jsStyle.css" rel="stylesheet">
 </head>
+
 <body>
-<div style="overflow: hidden">
-    <div class="slide-container">
-      <div class="slide-box">
-        <img src="img/car1.png">
-      </div>
-      <div class="slide-box">
-        <img src="img/car2.png">
-      </div>
-      <div class="slide-box">
-        <img src="img/car3.png">
-      </div>
+    <div style="overflow: hidden">
+        <div class="slide-container">
+            <div class="slide-box">
+                <img src="img/car1.png">
+            </div>
+            <div class="slide-box">
+                <img src="img/car2.png">
+            </div>
+            <div class="slide-box">
+                <img src="img/car3.png">
+            </div>
+        </div>
     </div>
- </div>
- <button class="slide-1">1</button>
- <button class="slide-2">2</button>
- <button class="slide-3">3</button>
- <button class="slide-next">다음</button>
- <button class="slide-prev">이전</button>
- <script>
-     $('.slide-1').on('click',function(){
-        $('.slide-container').css('transform','translateX(0vw)');
-    })
-    $('.slide-2').on('click',function(){
-        $('.slide-container').css('transform','translateX(-100vw)');
-    })
-     $('.slide-3').on('click',function(){
-        $('.slide-container').css('transform','translateX(-200vw)');
-    })
+    <button class="slide-1">1</button>
+    <button class="slide-2">2</button>
+    <button class="slide-3">3</button>
+    <button class="slide-next">다음</button>
+    <button class="slide-prev">이전</button>
 
-     var presentPhoto =1;
 
-     $('.slide-next').on('click',function(){
-            if()
-    })
+    <script>
+        var presentPhoto = 1;
+        $('.slide-1').on('click', function() {
+            $('.slide-container').css('transform', 'translateX(0vw)');
+            presentPhoto = 1;
+        })
+        $('.slide-2').on('click', function() {
+            $('.slide-container').css('transform', 'translateX(-100vw)');
+            presentPhoto = 2;
+        })
+        $('.slide-3').on('click', function() {
+            $('.slide-container').css('transform', 'translateX(-200vw)');
+            presentPhoto = 0;
+        })
 
- </script>
+
+        $('.slide-next').on('click', function() {
+            var counts = -100*presentPhoto;
+            $('.slide-container').css('transform', 'translateX('+counts+'vw)');
+            presentPhoto=(presentPhoto+1)%3;
+        })
+
+        $('.slide-prev').on('click', function() {
+            presentPhoto=(presentPhoto+2)%3;
+            var counts;
+            if(presentPhoto ==0){
+                            alert("맨 첨입니다!");
+            }else{
+                             counts= -100*(presentPhoto-1);
+                            $('.slide-container').css('transform', 'translateX('+counts+'vw)');
+            }
+
+
+        })
+
+//        숙제
+        function 시간(min,sec){
+            return min*60*1000+sec*1000;
+        }
+
+        console.log(시간(1,30));
+        console.log(시간(2,10));
+
+        function 할인(price,first){
+            if(first==false){
+                return (price*0.9).toFixed(1);
+            }else{
+                return (price*0.9-1.5).toFixed(1)
+
+            }
+        }
+
+        console.log(할인(70,false));
+        console.log(할인(10,true));
+
+
+
+    </script>
 </body>
+
 </html>
