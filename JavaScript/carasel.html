@@ -11,6 +11,67 @@
 </head>
 
 <body>
+    <nav class="navbar navbar-light bg-light">
+        <div class="container-fluid">
+            <span class="navbar-brand">JSSHop</span>
+            <button class="navbar-toggler" type="button">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="main-bg">
+        <h4>Shirts On Sales</h4>
+        <button id="login" class="btn btn-danger">로그인</button>
+        <div style="height: 600px; ">
+            <div class="lorem" >
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque iaculis, mi quis auctor pulvinar, felis est cursus neque, et hendrerit nunc urna egestas metus. Etiam ut tincidunt mi. Suspendisse hendrerit ornare dui, volutpat tempor lorem commodo a. Integer viverra leo non semper consectetur. Aenean eget metus mi. Nulla fringilla, mi vel hendrerit vehicula, nulla orci mattis orci, nec cursus neque velit vel nisi. Etiam aliquam mollis ligula vel finibus. Nulla porta faucibus nulla, vel volutpat justo dictum quis. Duis imperdiet non turpis placerat eleifend. Aliquam libero dui, vestibulum eget felis et, blandit malesuada tortor. Nam commodo auctor velit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+
+Mauris sed elit mauris. Duis cursus commodo venenatis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nulla enim mauris, fringilla eu tempor ut, molestie vel nisi. Suspendisse potenti. Duis porta cursus mi et aliquet. Donec tincidunt massa non mi suscipit elementum. Nulla facilisi. Vestibulum et lacinia neque. Vestibulum nulla metus, blandit vitae sem nec, dictum faucibus nunc. Nullam quis dapibus est, eget dapibus metus. Vivamus hendrerit eros in arcu rhoncus, at consequat arcu sollicitudin. Nullam eu neque sit amet elit luctus ultricies eget vitae enim. Suspendisse velit lectus, fringilla eu congue vitae, porttitor eu est.
+
+Fusce nec iaculis orci. Sed congue sed ante varius suscipit. Quisque dapibus vel nulla et tincidunt. Nunc non turpis a sem cursus mattis. Donec tempor auctor mi sit amet euismod. Donec varius non erat quis vestibulum. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec accumsan felis non dui finibus cursus. Vestibulum non velit ut odio ultrices luctus tincidunt nec est.
+
+Fusce eget ornare urna, quis semper felis. Donec vel ex quam. Integer imperdiet turpis quis lectus molestie imperdiet. Ut a convallis nibh, in consequat urna. Curabitur vulputate justo auctor, tincidunt purus sed, aliquet purus. Cras eleifend gravida ipsum in cursus. Sed posuere dapibus purus, eget commodo diam fermentum in. Sed fringilla leo non mauris congue, eget lobortis risus finibus. Donec erat tellus, posuere quis turpis eu, scelerisque imperdiet ante. Cras lobortis lectus vitae enim faucibus, vitae semper nisi rhoncus. Morbi vel lorem diam. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+
+
+            </div>
+            <div class="BBar" style="background-color:black;width:350px;height:10px;margin:auto;"></div>
+
+
+        </div>
+
+    </div>
+
+    <script>
+        //div 스크롤바 내린 양 + 눈에보이는 div 높이 == div 실제 높이
+        $('.lorem').on('scroll',function(){
+            var 스크롤양 = document.querySelector('.lorem').scrollTop;
+            var 실제높이=document.querySelector('.lorem').scrollHeight;
+            var 높이 = document.querySelector('.lorem').clientHeight;
+
+//                 var boxHeight= $(window).scrollTop();
+            console.log('높이'+높이);
+            console.log('스크롤양'+스크롤양);
+            console.log('실제높이'+실제높이);
+            var 비율 =(스크롤양+높이)/실제높이.toFixed(2);
+            var 바길이=document.querySelector('.lorem').clientWidth;
+            var 실제바 = 바길이*비율.toFixed(2);
+            console.log('비율'+비율);
+
+            console.log('바길이'+바길이);
+            $('.BBar').css('width',실제바+'px');
+            if(실제높이==스크롤양+높이){
+                alert('다 읽었나요:?')
+            }
+
+        })
+
+
+
+
+
+    </script>
+
     <div style="overflow: hidden">
         <div class="slide-container">
             <div class="slide-box">
@@ -48,47 +109,70 @@
 
 
         $('.slide-next').on('click', function() {
-            var counts = -100*presentPhoto;
-            $('.slide-container').css('transform', 'translateX('+counts+'vw)');
-            presentPhoto=(presentPhoto+1)%3;
+            var counts = -100 * presentPhoto;
+            $('.slide-container').css('transform', 'translateX(' + counts + 'vw)');
+            presentPhoto = (presentPhoto + 1) % 3;
         })
 
         $('.slide-prev').on('click', function() {
-            presentPhoto=(presentPhoto+2)%3;
+            presentPhoto = (presentPhoto + 2) % 3;
             var counts;
-            if(presentPhoto ==0){
-                            alert("맨 첨입니다!");
-            }else{
-                             counts= -100*(presentPhoto-1);
-                            $('.slide-container').css('transform', 'translateX('+counts+'vw)');
+            if (presentPhoto == 0) {
+                alert("맨 첨입니다!");
+            } else {
+                counts = -100 * (presentPhoto - 1);
+                $('.slide-container').css('transform', 'translateX(' + counts + 'vw)');
             }
 
 
         })
 
-//        숙제
-        function 시간(min,sec){
-            return min*60*1000+sec*1000;
+        //        숙제
+        function 시간(min, sec) {
+            return min * 60 * 1000 + sec * 1000;
         }
 
-        console.log(시간(1,30));
-        console.log(시간(2,10));
+        console.log(시간(1, 30));
+        console.log(시간(2, 10));
 
-        function 할인(price,first){
-            if(first==false){
-                return (price*0.9).toFixed(1);
-            }else{
-                return (price*0.9-1.5).toFixed(1)
+        function 할인(price, first) {
+            if (first == false) {
+                return (price * 0.9).toFixed(1);
+            } else {
+                return (price * 0.9 - 1.5).toFixed(1)
 
             }
         }
 
-        console.log(할인(70,false));
-        console.log(할인(10,true));
+        console.log(할인(70, false));
+        console.log(할인(10, true));
+
+        //스크롤 이벤트
+        //        window.addEventListener('scroll', function() {
+        //            //            console.log('안뇽');
+        ////            console.log(window.scrollY);
+        ////            window.scrollTo(0, 100); //위에서부터+
+        ////            window.scrollBy(0, 100); 지금 부터+
+        //        })
 
 
+        //        Jquery 문법
+        //        $(window).on('scroll', function() {
+        //            $(window).scrollTop();
+        //
+        //        })
 
+        //숙제
+        $(window).on('scroll', function(){
+//            var sheight= window.scrollY;
+            var sheight = $(window).scrollTop();
+
+            if ( sheight> 100) {
+                $('.navbar-brand').css('font-size', '15px');
+            } else {
+                $('.navbar-brand').css('font-size', '35px');
+            }
+
+        })
     </script>
-</body>
-
-</html>
+</body></html>

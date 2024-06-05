@@ -103,3 +103,19 @@
   font-size : 30px;
   transition : all 1s;
 }
+
+.main-bg {
+/*    height:500px;*/
+    padding-top:100px;
+
+}
+
+.lorem {
+    background-color:azure;
+    margin:auto;
+    margin-top:30px;
+/*    margin-bottom:30px;*/
+    width:350px;
+    height:400px;
+    overflow-y: scroll;
+}
