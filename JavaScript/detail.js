@@ -1,18 +1,13 @@
+var numClass =$('.tab-button').length;
+//console.log(numClass);
+for (let i= 0; i < numClass; i++) {
 
-var count;
-
-for (count = 0; count < 3; count++) {
-    $('.tab-button').ep({
-        count
-    }).on('click', function () {
-        $('.tab-content').removeClass('.show');
-        $('.tab-button').removeClass('.orange');
-        $('.tab-button').eq({
-            count
-        }).addClass('.orange');
-        $('.tab-content').eq({
-            count
-        }).addClass('.show');
+    $('.tab-button').eq(i).on('click', function () {
+//console.log(i);
+        $('.tab-content').removeClass('show');
+        $('.tab-button').removeClass('orange');
+        $('.tab-button').eq(i).addClass('orange');
+        $('.tab-content').eq(i).addClass('show');
 
     });
 

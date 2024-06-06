@@ -36,9 +36,14 @@
   height : 100%;
   position : fixed;
   background : rgba(0,0,0,0.5);
-  z-index : 5;
+  z-index : 7;
   padding: 30px;
   visibility: hidden;
+}
+
+.show-modal{
+
+    visibility: visible;
 }
 
 .show{
@@ -49,6 +54,7 @@
 
 .white-bg {
   background: white;
+    color:black;
   border-radius: 5px;
   padding: 30px;
 }
