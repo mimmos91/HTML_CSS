@@ -162,3 +162,16 @@
   .show {
     display: block;
   }
+
+.form-hide {
+    visibility: hidden;
+}
+
+.form-show{
+    visibility: visible;
+}
+
+.plus {
+    margin-left:100px;
+
+}
