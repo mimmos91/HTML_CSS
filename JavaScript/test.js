@@ -78,7 +78,13 @@ var 가나다 = ['다', '가', '나'];
 
 가나다.sort(function(a,b){
 
-    return b-a;
+    if(a<b){
+
+        return -1
+    }else{
+        return 1
+    }
+
 
 });
   console.log(가나다);
