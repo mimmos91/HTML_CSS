@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link href="../css/jsStyle.css" rel="stylesheet">
+<!--        <script src="test.js"></script>-->
+
+</head>
+<body>
+<div>장바구니 페이지</div>
+
+<script>
+ var contents = localStorage.getItem('contents');
+
+    contents = JSON.parse(contents);
+    var htmls;
+ for(var i=0;i<contents.length;i++){
+    htmls = `<p>${contents[i]}<p>`
+    $('div').append(htmls);
+ }
+
+
+
+</script>
+
+
+    </body>
+</html>

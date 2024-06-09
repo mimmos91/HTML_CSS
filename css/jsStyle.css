@@ -1,4 +1,10 @@
+h1{
 
+text-align: center;
+vertical-align: middle;
+font-weight: 1000;
+transform: roatate(0.03deg);
+}
 .alert-box {
   background-color: skyblue;
   height:10px;
@@ -89,7 +95,7 @@
   width: 300vw;
 /*    margin-left:-200vw;*/
 /*    transform: translatex(-100vw);*/
-  transition: all 1s;
+/*  transition: all 1s;*/
 }
 .slide-box {
   width: 100vw;
@@ -180,4 +186,28 @@
     margin:auto;
     padding-left:30px;
     padding-bottom: 15px;
+}
+
+.card-background {
+  height: 3000px;
+  margin-top: 800px;
+  margin-bottom: 1600px;
+}
+
+.card-box img {
+  display: block;
+  margin: auto;
+  max-width: 80%;
+}
+
+.card-box {
+  position: sticky;
+  top: 400px;
+  margin-top: 200px;
+}
+
+.test {
+/*    padding:auto;*/
+    margin-left: 50px;
+    margin: auto;
 }

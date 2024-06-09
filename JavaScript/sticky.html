@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!--
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+-->
+    <link href="../css/jsStyle.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <h1 class="test">It's as easy as it sounds.</h1>
+    <div class="card-background">
+
+        <div class="card-box">
+            <img src="img/card1-sti.png">
+        </div>
+        <div class="card-box">
+            <img src="img/card2-sti.png">
+        </div>
+        <div class="card-box">
+            <img src="img/card3-sti.png">
+        </div>
+    </div>
+    <script>
+        $(window).scroll(function(){
+
+            var 높이=$(window).scrollTop();
+
+            console.log(높이);
+            //높이 700~1150
+
+            if(700<높이 & 높이<1150){
+
+                var y = (1150-높이)/450;
+            $('.card-box').eq(0).css('opacity',y);
+
+                var z = (-1/5000) * 높이 + 565/500;
+             $('.card-box').eq(0).css('transform', `scale( ${z} )`);
+
+            }else if(1500<높이 & 높이<2150){
+
+             var y = (2150-높이)/750;
+                console.log('2번째',y);
+            $('.card-box').eq(1).css('opacity',y);
+            var z2 = (-1/6500) * 높이 + 80/65;
+             $('.card-box').eq(1).css('transform', `scale( ${z2} )`);
+
+
+
+            }
+
+
+
+        })
+
+
+
+
+    </script>
+
+
+
+</body></html>

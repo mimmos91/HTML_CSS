@@ -176,6 +176,6 @@ $('.buy').on('click',function(e){
 
    console.log('contents'+contents);
 
-   localStorage.setItem('name',JSON.stringify(contents));
+   localStorage.setItem('contents',JSON.stringify(contents));
 
 })

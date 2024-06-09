@@ -69,14 +69,14 @@
         })
 
         document.querySelector('.black-bg').addEventListener('click', function(e) {
-//            document.querySelector('.black-bg').classList.remove('show-modal');
-//            e.target;
-//            e.currentTarget;
-//            e.preventDefault();
-//            e.stopPropagation();
+            //            document.querySelector('.black-bg').classList.remove('show-modal');
+            //            e.target;
+            //            e.currentTarget;
+            //            e.preventDefault();
+            //            e.stopPropagation();
 
             //실제 검은 창만 눌렀을 때만 닫아라
-            if(e.target.id=="black-bg"){
+            if (e.target.id == "black-bg") {
                 document.querySelector('.black-bg').classList.remove('show-modal');
             }
 
@@ -111,7 +111,7 @@
 
     <div style="overflow: hidden">
         <div class="slide-container">
-            <div class="slide-box">
+            <div class="slide-box" draggable="true">
                 <img src="img/car1.png">
             </div>
             <div class="slide-box">
@@ -163,6 +163,54 @@
 
 
         })
+
+        //Upgrade Carasel
+
+        var 시작좌표 = 0;
+        var 누름 = false;
+         var 차이=0;
+
+        $('.slide-box').eq(0).on('mousedown', function(e) {
+            //            console.log('안녕');
+            시작좌표 = e.clientX;
+//            console.log(e.clientX);
+             누름 = true;
+        })
+
+        $('.slide-box').eq(0).on('mousemove', function(e) {
+
+           차이 =e.clientX-시작좌표;
+
+           if(누름){
+
+                $('.slide-container').css('transform', 'translateX(' + 차이 + 'px)');
+
+            }
+
+        })
+
+        $('.slide-box').eq(0).on('mouseup',function(e){
+
+            눌렀냐= false;
+            if(e.clientX-시작좌표 < -100){
+                $('.slide-container').css('transition','all 0.5s').css('transform', 'translateX(-100vw)');
+
+            }else{
+
+                $('.slide-container').css('transition','all 0.5s').css('transform', 'translateX(0vw)');
+
+            }
+            setTimout(()=>{
+
+                $('.slide-container').css('transition','none');
+
+
+
+            })
+
+        })
+
+
 
         //        숙제
         function 시간(min, sec) {
