@@ -24,6 +24,7 @@ function 출력(manyPriducts) {
         <img src="https://via.placeholder.com/600"class="w-100">
         <h5>${manyPriducts[i].title}</h5>
         <p>가격 : ${manyPriducts[i].price}</p>
+<button type="button" class="buy">구매</button>
   </div>
 </div>`
         $('.row').append(lists);
@@ -32,12 +33,23 @@ function 출력(manyPriducts) {
 
     }
 
-
-
 }
 
 
-
+//local 스토리지!
+//localStorage.setItem('이름','kim')
+//localStorage.getItem('이름');
+//localStorage.removeItem('이름');
+//
+//localStorage.setItem('num',[1,2,3]);
+//
+//var arr=[1,2,3];
+//var newARR = JSON.stringify(arr);
+//
+//localStorage.setItem('newArr',newARR);
+//var 꺼낸거 =localStorage.getItem('newArr');
+//
+//console.log(JSON.parse(꺼낸거));
 
 출력(products);
 let count = 0;
@@ -64,6 +76,8 @@ $('.plus').on('click', function () {
     }
 
 })
+
+
 
 
 $('.all').on('click', function () {
@@ -113,17 +127,12 @@ $('.cheap').on('click', function () {
 
             allproduct.forEach(function(a) {
 
-                console.log(a.price);
-                console.log(parseInt(a.price) < 60000);
-
 
                 if (parseInt(a.price) < 60000) {
 
                     under6.push(a);
 
                 }
-
-
 
 
             });
@@ -144,5 +153,29 @@ $('.back').on('click',function(){
     출력(products);
     count=0;
     $('.plus').addClass('form-show');
+
+})
+
+//var newARR = JSON.stringify(arr);
+//
+//localStorage.setItem('newArr',newARR);
+//var 꺼낸거 =localStorage.getItem('newArr');
+//
+//console.log(JSON.parse(꺼낸거));
+
+var contents =[];
+
+$('.buy').on('click',function(e){
+
+    contents.log('구매들어옴');
+
+   var title =$(e.target).siblings('h5').text();
+
+   contents.push(title);
+
+
+   console.log('contents'+contents);
+
+   localStorage.setItem('name',JSON.stringify(contents));
 
 })
